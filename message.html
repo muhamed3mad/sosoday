@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة خاصة 💌</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            font-family: 'Playpen Sans Arabic', cursive;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 25px;
+            max-width: 700px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        h1 {
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center; /* <-- الكلام بقى في النص */
+            white-space: pre-line;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #d63384;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+
+    <!-- تشغيل الموسيقى -->
+    <audio autoplay loop>
+        <source src="birthday.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <div class="message-box">
+        <h1>💖 Happy Birthday Sooooosoooooo 💖</h1>
+        <p>
+سوسو يسوسو كل سنه وانتى طيبه يروح قلبى وعقبال مليون سنه وانتى جمبى يروح قلبى ربنا يخليكى ليا يارب وتفضلى جمبى طول العمر مهما قعدت اوصف بحبك قد ايه مش هيكفى والله حبى ليكى من اول يوم كلمتك فيه ونا حاسس بحب وحنان ودفى معاكى ادركت معنى اول حبيب واخر حبيب ادركت يعنى ايه حب وونس ادركت مشاعر كتير اوى وحاجات اول مره اعيشها بجد انا مبسوط انك جمبى والله يسوسو ربنا ما يحرمنى منك يروحى وتتفضلى سند ليايارب . حقكك عليا انى ماثر معاكى اخر فتره بس صدقينى غصب عنى والله مهماحصل فنتى بنتى وبقولك بنتى مش كرينج وكدا بس بجد بحس انك بنتى والله وروحى وكل حاجه فى الدنيا اوعى تفتكرى اننى فى يوم هتغير عليكى او حاجه انا بحبك وبموت فيكى والله عشنا مع بعض احلى الذكريات ولسه هنعمل ذكريات اكتر واكتر مع بعض يسوسو لسه بنبداء حكايتنااللى ملهاش نهايه ان شاء الله مش قادر اوصف كميه المشاعر والفخر اللى جوايا والله بوجودك جمبى يارب تفضلى سندى وضهررى طول العمر يحبيتى يارب ويخليكى ليا بحبك اوى يا احلى واجمل بنت فى الدنيا بحبك يبت يسوسو حبيت الرساله تكون بالعربى عشان توضح مشاعرى بحبك يروح قلبى
+        </p>
+        <button onclick="goBack()">⬅ Back to Cake</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "birthday.html";
+        }
+    </script>
+</body>
+
+</html>
